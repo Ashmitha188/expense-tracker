@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+.expense-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.expense-card{
+    width:450px;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.expense-card h2{
+    text-align:center;
+    color:#7c3aed;
+    margin-bottom:25px;
+}
+
+.expense-card input,
+.expense-card select{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.expense-card input:focus,
+.expense-card select:focus{
+    outline:none;
+    border-color:#7c3aed;
+}
+
+.expense-card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#7c3aed;
+    color:white;
+    border-radius:10px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.expense-card button:hover{
+    background:#6d28d9;
+}
+
+@media(max-width:500px){
+
+.expense-card{
+    width:90%;
+}
+
+}
